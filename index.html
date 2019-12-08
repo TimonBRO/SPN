@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <title>SPN</title>
 </head>
+
 <body>
-    <div class="main">
-        <div class="link">
-            <ul>
-                <li onclick="click(1)" id="item 1" class="active item">item1</li>
-                <li onclick="click(2)" id="item 2" class="item">item2</li>
-                <li onclick="click(3)" id="item 3" class="item">item3</li>
-                <li onclick="click(4)" id="item 4" class="item">item4</li>
-                <li onclick="click(5)" id="item 5" class="item">item5</li>
-                <li onclick="click(6)" id="item 6" class="item">item6</li>
-                <li onclick="click(7)" id="item 7" class="item">item7</li>
-            </ul>
-            <div class="r2015">
-                2015
+    <div class="wrapper">
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <p>Logo</p>
+                </div>
+                <div class="titul">
+                    <p>Frontend test, second level</p>
             </div>
+            </div>
+        </header>
+        <div class="main">
 
-        </div> 
-        <div class="txt">
-                something not intresting
+            <div class="block_left">
+                <div class="item item1" id="Item1">Item1</div>
+                <div class="item item2" id="Item2">Item2</div>
+                <div class="item item3" id="Item3">Item3</div>
+                <div class="item item4" id="Item4">Item4</div>
+                <div class="item item5" id="Item5">Item5</div>
+                <div class="item item6" id="Item6">Item6</div>
+                <div class="item item7" id="Item7">Item7</div>
+                <div class="item item8">
+                    <p>
+                        (c)2015
+                    </p>
+                </div>
+            </div>
+            <div class="block_right">
+                <div class="txt" id="txt">
 
+                    <div class="txt1" id="txt1">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ipsum error quas enim, autem sint ullam dolore fugiat possimus nam iste vel asperiores alias saepe omnis blanditiis modi neque rem.</p>
+                    </div>
+                    <div class="txt2" id="txt2">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam beatae eligendi voluptas ea debitis dicta.</p>
+                    </div>
+                    <div class="txt3" id="txt3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa necessitatibus? Odio quasi nihil dolor fugit, possimus, eius placeat sunt amet pariatur sint, quos at error unde tempore! Asperiores, iure!</p>
+                    </div>
+                    <div class="txt4" id="txt4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsam, enim delectus sapiente repudiandae eius esse deleniti, quibusdam sint hic quod impedit veritatis iure dignissimos tempore ad nihil.</p>
+                    </div>
+                    <div class="txt5" id="txt5">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ex expedita culpa fugit ipsam labore consequuntur iste.</p>
+                    </div>
+                    <div class="txt6" id="txt6">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem?</p>
+                    </div>
+                    <div class="txt7" id="txt7">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates tenetur illum odit!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        
     </div>
-    <script>
-        function click(a){
-            var lis = document.getElementsByClassName("item");
-            var li = document.getElementById("item "+String(a));
-            li.className = li.className + "active";
-        }
-    
-    </script>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
